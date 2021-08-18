@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize</title>
+    <style>
+       
+    #fullscreenDiv {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+    .center {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}​
+  
+      </style>
+</head>
+<body>
+        <div id="fullscreenDiv"></div>
+
+        <script type="text/javascript">
+            function random_item(items)
+         {
+           
+         return items[Math.floor(Math.random()*items.length)];
+              
+         }
+         
+         var items = ["Jenny Dong","Yale","王静","Wenjie Wang","王徽","Jian Zhang","May Wong","国安","Mandy Wang","Jenny","Tony Jiang","Henry Ming","Bo Li","Michelle Jiang","Joanna Zhang","Wendy庆文","Yun Li","Michael Yan","Sophie","Joyce","Bonnie Liao","风叶","Bonnie Liao","Liao Shao juan","志冰","Ellen Zhu","Jerry Lin","Harrison Lei","Samantha","Zhongwang Yu","Dorothy Chan","John Wu","屠新宇","Ann","向东","Eileen","Selina Shi","Grace Zhang"];
+         console.log(random_item(items));
+         document.getElementById('fullscreenDiv').innerHTML = '<div class="center"><h1>Congratulation ' + random_item(items) + '!</h1></div>';
+               </script>
+        
+</body>
+</html>
+
+
+<!-- <html>
+<body>
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+</body>
+</html> -->
